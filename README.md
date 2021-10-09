@@ -1,4 +1,4 @@
-# Go to [mccode187.github.io](https://mccode187.github.io/)
+# Here is the website: [https://mccode187.github.io/](https://mccode187.github.io/)
 
 Keywords: 
 finite additive 2-bases, 
