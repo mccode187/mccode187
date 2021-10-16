@@ -14,4 +14,6 @@ subset,
 cardinality, 
 element, 
 exponential function, 
-floor function
+floor function,
+nonnegative integer,
+absolute value
