@@ -15,17 +15,29 @@
     <p>If you have any questions, comments, or ideas, or want to collaborate, <br> please don't hesitate to contact me. I'd be happy to hear from you! :) </p>
     <p>My email is <a href = "mailto: michael02chu@gmail.com">michael02chu@gmail.com</a>.</p>
     <h2>Results</h2>
-    <p>Given any \(n \in \mathbb{Z}_{\geq 0}\) and \(k \in [0,2n]\), we have \(|\{S : (S \subseteq [0,n]) \land (k \not \in 2S)\}| = 2^{|n-k|} \cdot 3^{\lfloor (n-|n-k|+1)/2 \rfloor}\). 
+    <p>Given any \(n \in \mathbb{Z}_{\geq 0}\) and \(k \in [0,2n]\), we have \(|\{S : (S \subseteq [0,n]) \land (k \not \in S+S)\}| = 2^{|n-k|} \cdot 3^{\lfloor (n-|n-k|+1)/2 \rfloor}\). 
       &emsp; Oct 16 2021
       &emsp; <a href="https://tio.run/##jVRRb9owEH73rzitD9g0MAjSHpCYNnXT9rBpEpH2sKZFARzikjip47SqQn47uzOQtBNVFwmT3Pfdd9/ZlxRPNsn1ZL/v9Xrsm3qQGiL9BCHXECr8ZZFNlsv6T7Oow428h1ETCmSskbF1jOuR5@ubUHjwKCGJHiQL@S6sA5gCDyAsq2UpLSYiT98ICFNKplydWyfgByJsdjAD/7be6cF210C4WueWTW7rMI3TPDfA9cBBl2Px3ofQuCg6GTL2ucIGzBR@qlUSyRSukop9iaycwq@VhfEH8Ef@mH3NIpVOITuQRv4qqT5tKDZc5Rmj3pnKitxYoIZZbPIMlJXG5nlawhHCXKU9wIyl0pFVuS4ZW8sYivxRGmyTU0q0TKWYMsDrXQtcjz3fm2D/g8FH4AL42MPFp2XiuUffrRMXnRwi@P/O6ZS4O6kqn@m7sJG2Mvpga0iWFyecP/fISw@MgBj30QBuuIn0RvJUal4K3FDBGEG6g8ajo3@Kb7s4nnRfY8YBpOsCrvKsqKyEH98DQM3YDhI64FKtpYA8BnlfORdtymEg2o7aHTqVoAJC/EtfZFJapTeLVa7XigRR4PqmpZHTgJwe@Z1FZ7PzaROJnAw5OHiz4DJ4QQwWRVqVi@Cl@KmAogLBS@kTdvcKRpc6qN6hqrq8O0@Jgd4H3lJJ7WhGnFd97ncYFYXU6zZdnO1qWOIU85fYqfD2jYqvnsOpdNDp0izg8dKAvZbVkc/M0pxmyahN8uYwzV0lv9/n0bLEj8RWCOjDBJ/pNR66zwTH@Al13w@a@K7ob2lU/IRzEVkyPkPJFi2M0pbHPT2rdeNtZ/W28YhT49J4c7qb0x2nIGUKB7nbptf1eHEQ@o/dODIF2@//Ag" title="Python 3 – Try It Online" target="_blank" rel="noopener noreferrer">Try it online!</a>
       &emsp; <a href="https://www.desmos.com/calculator/bzntv8sdzq" target="_blank" rel="noopener noreferrer">Desmos</a>
     </p>
-    <p>Given any \(n \in \mathbb{Z}_{\geq 1}\) and \(k \in [1,n]\), we have \(|\{S : (S \subseteq [0,n]) \land (k-1,k \not \in 2S)\}| = 2^{n-k} \cdot F_{k+2}\).
+    <p>Given any \(n \in \mathbb{Z}_{\geq 1}\) and \(k \in [1,n]\), we have \(|\{S : (S \subseteq [0,n]) \land (k-1,k \not \in S+S)\}| = 2^{n-k} \cdot F_{k+2}\).
        &emsp; Oct 18 2021
+    </p>
+    <p>Given any \(n \in \mathbb{Z}_{\geq 0}\), we have \(|\{S : (S \subseteq [0,n]) \land (|S|=n+1) \land (S+S = [0,2n])\}| = 1\).
+       &emsp; Oct 28 2021
+    </p>
+    <p>Given any \(n \in \mathbb{Z}_{\geq 1}\), we have \(|\{S : (S \subseteq [0,n]) \land (|S|=n) \land (S+S = [0,2n])\}| = n-3\).
+       &emsp; Oct 28 2021
+    </p>
+    <p>Given any \(n \in \mathbb{Z}_{\geq 2}\), we have \(|\{S : (S \subseteq [0,n]) \land (|S|=n-1) \land (S+S = [0,2n])\}| = \frac{(n-5)(n-2)}{2} - 1\).
+       &emsp; Oct 28 2021
+    </p>
+    <p>Given any \(n \in \mathbb{Z}_{\geq 3}\), we have \(|\{S : (S \subseteq [0,n]) \land (|S|=n-2) \land (S+S = [0,2n])\}| = \frac{(n-8)(n-3)(n-1)}{6} \).
+       &emsp; Oct 28 2021
     </p>
     <h2>Notation</h2>
     <p>I use \([a,b]\) to denote the integer interval \(\{a,a+1,...,b\}\).<br>
-       I use \(2A\) to denote the sumset \(A+A = \{a_1+a_2 : a_1,a_2 \in A\}\).<br>
+       I use \(A+A\) to denote the sumset of $A$ and $A$, or \(\{a_1+a_2 : a_1,a_2 \in A\}\).<br>
        I use \(F_i\) to denote the \(i^{\text{th}}\) Fibonacci number, where \(F_0 = 0\), \(F_1 = 1\), and \(F_i = F_{i-1} + F_{i-2}\) for all \(i \in \mathbb{Z}_{\geq 2}\). 
     </p>
     <h2>Keywords</h2>
