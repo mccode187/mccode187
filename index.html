@@ -26,6 +26,9 @@
     <p>Given any \(d \in \mathbb{Z}_{\geq 1}\) and \(n=d^2-1\), we have \(\min \{ k : \exists A \exists B : (|A|=|B|=k) \land (A,B \subseteq [0,n]) \land (A+B \supseteq [0,n]) \} = d\).
        &emsp; Dec 13 2021
     </p> 
+    <p>Given any \(t \in \mathbb{Z}_{\geq 0}\), \(d=2^t\), and \(n=d^2-(t-1)d-2\), we have \(\min \{ k : \exists A \exists B : (|A|=|B|=k) \land (A,B \subseteq [0,n]) \land (A+_{\leq}B \supseteq [0,n]) \} = d\).
+       &emsp; Jan 08 2022
+    </p>
     <h2>OEIS Contributions</h2>
     <p><a href="https://oeis.org/A108411" target="_blank" rel="noopener noreferrer">A108411</a> -- comment
        &emsp; Oct 05 2021 <br>
@@ -35,6 +38,7 @@
     <h2>Notation</h2>
     <p>\([a,b]\) denotes the integer interval \(\{a,...,b\}\), or \(\{n \in \mathbb{Z} : a \leq n \leq b\}\)<br>
        \(A+B\) denotes the sumset of \(A\) and \(B\), or \(\{a+b : (a \in A) \land (b \in B)\}\).<br>
+       \(A+_{\leq}B\) denotes the noncommutative sumset of \(A\) and \(B\), or \(\{a+b : (a \in A) \land (b \in B) \land (a \leq b)\}\).<br>
     </p>
     <h2>Keywords</h2>
     <p>finite additive 2-basis, <br>
